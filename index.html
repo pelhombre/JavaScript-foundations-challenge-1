@@ -5,5 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Basics</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+
+      /* ACTIVITAT 0*/
+
+      const myString = "Hola";
+      console.log("String:", myString);
+
+      const myNumber = 42;           
+      console.log("Number:", myNumber);
+
+      const myBoolean = true;            
+      console.log("Boolean:", myBoolean);
+
+      const myNull = null;              
+      console.log("Null:", myNull);
+
+      const myUndefined = undefined;   
+      console.log("Undefined:", myUndefined);
+
+      // ACTIVITAT 1
+
+        let name = "Pol"
+        function updateValue(value) {
+          name = value;
+        }
+
+        updateValue("DRAKE");
+        console.log(name); 
+
+        updateValue(true);
+        console.log(name);
+
+        updateValue(20);
+        console.log(name); 
+        
+        //AVTIVITAT 2
+
+        const message = "Moo!";
+        console.log(message);
+
+
+        //ACTIVITAT 3
+
+        function getTypeOf(value) {
+        if (typeof value === "string") {
+          return "string";
+        } else if (typeof value === "number") {
+          return "number";
+        } else if (typeof value === "boolean") {
+          return "boolean";
+        } else if (typeof value === "object" && value === null) {
+          return "null";
+        } else if (typeof value === "undefined") {
+          return "undefined";
+        } else {
+          return "unknown"; 
+        }
+      }
+      
+      
+      console.log("Hello");
+      console.log(42);
+      console.log(true);
+      console.log(null);
+      console.log(undefined);
+      console.log({});
+      console.log(function(){});
+
+
+    </script>
+
+  </body>
 </html>
+1. true && console.log("moo");
+
+    Aquesta línia registrarà "mu" a la consola.
+    L'operador && realitza la lletra Y.
+    Ja que el costat esquerre és veritat, procedeix a executar el codi del costat dret.
+
+    2. false && console.log("moo moo?")
+
+    Aquesta línia no registra res a la consola.
+    L'operador && realitza una operació lògica I, i com que el costat esquerre és fals,
+    s'atura i no avalua ni executa el codi del costat dret.
+
+    3. true || console.log("hello friend");
+
+    Aquesta línia no registra res a la consola.
+    L'operador || realitza una operació lògica O.
+    Ja que el costat esquerre és cert, no cal avaluar el costat dret,
+    així que no executa l'expressió console.log.
+
+    4. false || console.log("bye friend");
+
+    Aquesta línia registrarà "adeu amic" a la consola. L'operador || realitza una operació lògica O. 
+    Com que el costat esquerre és fals, avalua el costat dret per determinar el resultat, 
+    i en aquest cas, executa l'expressió console.log.
+
+    Once you see the results, write in a comment why it works that way
