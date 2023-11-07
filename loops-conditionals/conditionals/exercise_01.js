@@ -8,18 +8,27 @@
     HINT: modulus operator ( % ) is your friend
 */
 
-let number = 7;
+/**
+ * isEvenOrOdd
+ */
+const evenOdd = function (number) {
+  const result =
+    number % 2 === 0 ? `Number ${number} is EVEN` : `Number ${number} is ODD`;
 
-if (number % 2 === 0) {
-    console.log(number + " Even.");
-} else {
-    console.log(number + " Odd.");
+  return result;
+};
+
+/**
+ * Program execution
+ */
+console.log("###############################");
+console.log("--- Is EVEN or ODD Program ---");
+
+for (let iteration = 0; iteration < 5; iteration++) {
+  const number = Math.floor(Math.random() * 100);
+
+  const result = evenOdd(number);
+  console.log(result);
 }
 
-number = 2;
-
-if (number % 2 === 0) {
-    console.log(number + " Even.");
-} else {
-    console.log(number + " Odd.");
-}
+console.log("--- Is EVEN or ODD complete ---");
