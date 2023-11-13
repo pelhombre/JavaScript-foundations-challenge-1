@@ -12,14 +12,14 @@
 const myString = "Hola";
 console.log("String:", myString);
 
-const myNumber = 42;           
+const myNumber = 42;
 console.log("Number:", myNumber);
 
-const myBoolean = true;            
+const myBoolean = true;
 console.log("Boolean:", myBoolean);
 
-const myNull = null;              
+const myNull = null;
 console.log("Null:", myNull);
 
-const myUndefined = undefined;   
+const myUndefined = undefined;
 console.log("Undefined:", myUndefined);

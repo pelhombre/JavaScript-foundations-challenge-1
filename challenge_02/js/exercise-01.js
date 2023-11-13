@@ -11,15 +11,14 @@ function updateValue(value) {
 // 3. Call function 'updateValue' with your favorite musician's name
 
 updateValue("DRAKE");
-console.log(name); 
+console.log(name);
 
 // 4. Call function 'updateValue' with the value 'true'
 
 updateValue(true);
-console.log(name); 
+console.log(name);
 
 // 5. Call function 'updateValue' with the value 28
 
 updateValue(20);
-console.log(name); 
-
+console.log(name);
